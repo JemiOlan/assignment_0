@@ -3,7 +3,7 @@ html, body {
     margin: 0%;
     font-family: 'Yeon Sung', cursive;
     font-size: 1.6em;
-    background: cadetblue;
+    background: ghostwhite;
     text-align: center;
 }
 
@@ -12,7 +12,7 @@ html, body {
 
 img {
     border-style: none;
-    border-radius: 75%;
+    border-radius: 50%;
     filter: grayscale(0);
     width: 45vw;
     transform: rotate(-90deg);
@@ -27,13 +27,12 @@ img {
 
 .navbar-left{
 flex-basis: 20%;
-border-bottom: 1px solid rgb(11, 11, 97);
-background: rgb(11, 11, 97);
+background:coral;
 }
 
 .navbar-right{
 flex-basis: 80%;
-background: rgb(11, 11, 97);
+background:coral;
 display: grid;
 
 }
@@ -57,14 +56,15 @@ h1 {
 }
 p {
     color:  rgb(21, 34, 34);
+    font-size: 1.5em;
 }
+
+
 a{
     color: rgb(68, 55, 55);
 }
 
-@https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-
-.media {
+@stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css, .media {
     position: relative;
     top: 40%;
     left: 50%;
@@ -72,7 +72,16 @@ a{
 
 }
 
-
+.footer {
+    margin-bottom:0;
+    color: black;
+    background-color:coral;
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: left;
+    font-size: 1.5em;
+}
 
 
 /*still fixing
@@ -117,10 +126,3 @@ div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
     background-color: darkblue;
 }*/
 
-.footer{
-    background-color: rgb(11, 11, 97);
-    color: coral;
-    padding: 10px 0 5px;
-    text-align: left;
-    font-size: 1.5em;
-}
