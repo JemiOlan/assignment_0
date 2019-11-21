@@ -137,28 +137,3 @@ a{
 }
 
 
-/*still fixing
-
-
-
-
-*div.borderYtoX a
-{
-    right: 0px;
-    bottom: 0px;
-}
-
-div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
-{
-    opacity: 1;
-    height: 2px;
-    width: 100%;
-}
-
-
-
-.navbar-head{
-    color: blue !important;
-    background-color: darkblue;
-}*/
-

@@ -1,29 +1,8 @@
-html, body {
-    margin: 0%;
+:root {
+    font-size: 80%;
     font-family: 'Yeon Sung', cursive;
-    background: ghostwhite;
-    text-align: center;
+    background: ghostwhite; 
 }
-
-body{
-    min-height: 100vh;
-    background-image: url(../images/sky_backgroundpic.jpg);
-    background-size: cover;
-}
-
-
-/* i got the font- family from font-family: 'Yeon Sung', cursive;  */
-
-img {
-    margin-top: 25px;
-    border-style: none;
-    border-radius: 25%;
-    filter: grayscale(0);
-    width: 15vw;
-    transform: rotate(-90deg);
-}
-
-/* tranforming my pics code was gotten from https://developer.mozilla.org/en-US/docs/Web/CSS/transform*/
 
 .nav-bar {
     display: flex;
@@ -32,7 +11,7 @@ img {
 
 .navbar-left{
 flex-basis: 20%;
-background:ghostwhite;
+background:rgb(240, 240, 243);
 display: grid;
 }
 
@@ -61,12 +40,10 @@ color: blue;
     width: 100%;
 }
 
-
 .navbar-right{
 flex-basis: 80%;
-background:ghostwhite;
+background:rgb(240, 240, 243);
 display: grid;
-
 }
 
 .navbar-right ul{
@@ -93,3 +70,107 @@ color: blue;
     height: 2px;
     width: 100%;
 }
+a{
+    color: lightcoral;
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0,0, 0.1);
+}
+
+.container {
+    width: 96rem;
+    margin: 2rem 100rem; 
+    display: table-row-group; 
+  }
+  
+  .gallery-item {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 5px 20px rgba(0, 0,0, 0.5);
+      transition: all .3s;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-auto-columns: repeat (autofit,minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(150px, auto);
+    }
+    
+    .image {
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        object-fit: cover;
+    }
+    
+    .middle {
+        transition: .5 ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50);
+        text-align: center;
+    }
+    
+    .gallery-item:hover .image {
+        filter: grayscale(1);
+    }
+    
+    .gallery-item:hover .middle {
+        opacity: 1;
+    }
+    
+    .gallery-item:hover {
+        box-shadow: 0 10px 20px rgba(92, 26, 26, 0.8);
+    }
+    
+    .text {
+        color: white;
+        font-size: 2.5em;
+        padding: 16px 32px;
+        font-family:'Yeon Sung', cursive;
+    }
+    
+    @media (max-width: 500px) {
+        .gallery-item,
+        body {
+            max-width: 30%;
+            grid-column: 2;
+            font-family: 'Yeon Sung', cursive;
+            text-align: left;
+        }
+        div.container, h1 {
+            text-align: left;
+            margin-left: 2em;
+        }
+
+        div.text {
+            font-size: 2.5em;
+        }
+    }
+
+
+.footer {
+        position:relative;
+        bottom: 0;
+        margin-bottom:0;
+        color: lightyellow;
+        background-color:lightcoral;
+        width: 100%;
+        height: auto;
+        float: right;
+        text-align: left;
+        font-size: 1.5em;
+ }
