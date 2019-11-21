@@ -46,9 +46,7 @@ display: grid;
     display: inline-block;
     list-style: none;
     margin-left: 40px;
-
 }
-
 
 
 h1 {
@@ -69,7 +67,6 @@ a{
     top: 40%;
     left: 50%;
     transform: translate{-53%, -50%};
-
 }
 
 .footer {
