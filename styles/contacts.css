@@ -1,0 +1,74 @@
+.nav-bar {
+    display: flex;
+    height: 100;
+}
+
+.navbar-left{
+flex-basis: 20%;
+background:rgb(240, 240, 243);
+display: grid;
+}
+
+.navbar-left ul{
+    float: left;
+    padding: 35px 40px 10px 40px;
+}
+
+.navbar-left ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40%;
+}
+
+.navbar-left ul li a {
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-left ul li a:hover {
+color: blue;
+}
+
+.navbar-left ul li a:hover:before, .navbar-right ul li a:hover:after{
+    opacity: 1;
+    height: 3px;
+    width: 100%;
+}
+
+.navbar-right{
+flex-basis: 80%;
+background:rgb(240, 240, 243);
+display: grid;
+}
+
+.navbar-right ul{
+    float: right;
+    padding: 35px 40px 10px 40px;
+}
+
+.navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.navbar-right ul li a {
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-right ul li a:hover {
+color: blue;
+}
+
+.navbar-right ul li a:hover:before, .navbar-right ul li a:hover:after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+a{
+    color: lightcoral;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    display: block;
+}
